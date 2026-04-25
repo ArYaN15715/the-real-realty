@@ -8,8 +8,7 @@ export function TestimonialsSection() {
     <section
       id="testimonials"
       data-ocid="testimonials.section"
-      className="py-20 lg:py-28"
-      style={{ background: "oklch(var(--muted))" }}
+      className="py-20 lg:py-28 bg-background"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={headingRef} className="text-center mb-14">
@@ -19,9 +18,15 @@ export function TestimonialsSection() {
           >
             Client Voices
           </p>
-          <h2 className="font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-3">
             What Our Clients Say
           </h2>
+          {/* Gold accent underline */}
+          <div
+            className="mx-auto h-0.5 w-14 rounded-full mb-4"
+            style={{ background: "oklch(var(--accent))" }}
+            aria-hidden="true"
+          />
           <div className="flex items-center justify-center gap-1 mb-2">
             {(["s1", "s2", "s3", "s4", "s5"] as const).map((id) => (
               <svg
@@ -46,9 +51,18 @@ export function TestimonialsSection() {
             <figure
               key={testimonial.name}
               data-ocid={`testimonials.item.${index + 1}`}
-              className="bg-card rounded-xl p-6 border border-border/40 flex flex-col scroll-reveal"
-              style={{ transitionDelay: `${index * 120}ms` }}
+              className="scroll-reveal relative bg-card rounded-xl p-6 border border-border/40 flex flex-col transition-all duration-300 hover:border-[#C9A14A]/40 hover:shadow-xl hover:-translate-y-1 overflow-hidden"
+              style={{ transitionDelay: `${index * 150}ms` }}
             >
+              {/* Faded large quote icon */}
+              <div
+                className="absolute top-3 right-4 font-display text-8xl italic leading-none pointer-events-none select-none"
+                style={{ color: "#C9A14A", opacity: 0.08 }}
+                aria-hidden="true"
+              >
+                "
+              </div>
+
               <div
                 className="font-display text-4xl italic leading-none mb-4"
                 style={{ color: "oklch(var(--accent))" }}
@@ -56,15 +70,15 @@ export function TestimonialsSection() {
               >
                 "
               </div>
-              <blockquote className="flex-1 font-body text-sm text-muted-foreground leading-relaxed mb-5">
+              <blockquote className="flex-1 font-body text-sm text-muted-foreground leading-relaxed mb-5 relative z-10">
                 {testimonial.quote}
               </blockquote>
               <figcaption className="flex items-center gap-3">
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-body font-bold shrink-0"
                   style={{
-                    background: "oklch(var(--primary))",
-                    color: "oklch(var(--primary-foreground))",
+                    background: "#0F3D2E",
+                    color: "#FFFFFF",
                   }}
                   aria-hidden="true"
                 >

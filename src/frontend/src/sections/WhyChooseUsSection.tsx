@@ -44,6 +44,7 @@ export function WhyChooseUsSection() {
 
   return (
     <section
+      id="why-us"
       data-ocid="why_us.section"
       className="py-20 lg:py-28"
       style={{ background: "oklch(var(--muted))" }}
@@ -56,9 +57,15 @@ export function WhyChooseUsSection() {
           >
             Why The Real Realty
           </p>
-          <h2 className="font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-3">
             The Advisory Difference
           </h2>
+          {/* Gold accent underline */}
+          <div
+            className="mx-auto h-0.5 w-14 rounded-full mb-4"
+            style={{ background: "oklch(var(--accent))" }}
+            aria-hidden="true"
+          />
           <p className="font-body text-muted-foreground max-w-xl mx-auto text-base leading-relaxed">
             In a crowded broker market, we stand apart through radical
             transparency, deep expertise, and an unwavering client-first ethos.
@@ -70,8 +77,8 @@ export function WhyChooseUsSection() {
             <div
               key={item.title}
               data-ocid={`why_us.item.${index + 1}`}
-              className="bg-card rounded-xl p-6 border border-border/40 transition-smooth hover:border-accent/30 hover:shadow-sm scroll-reveal"
-              style={{ transitionDelay: `${index * 80}ms` }}
+              className="scroll-reveal bg-card rounded-xl p-6 border border-border/40 transition-all duration-300 hover:border-[#C9A14A]/50 hover:shadow-xl hover:-translate-y-1"
+              style={{ transitionDelay: `${index * 100}ms` }}
             >
               <div className="text-2xl mb-3" aria-hidden="true">
                 {item.icon}

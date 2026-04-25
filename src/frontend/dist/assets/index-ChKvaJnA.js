@@ -18834,7 +18834,7 @@ function Layout({ children }) {
       "footer",
       {
         "data-ocid": "footer.section",
-        className: "border-t border-border/50",
+        className: "border-t border-white/10",
         style: { background: "oklch(var(--primary))" },
         children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 md:grid-cols-3 gap-10", children: [
@@ -18847,43 +18847,33 @@ function Layout({ children }) {
                   children: COMPANY_NAME
                 }
               ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-sm leading-relaxed text-primary-foreground/75", children: "Premium real estate consulting firm in South Bopal, Ahmedabad. Trusted advisory for serious buyers and investors." })
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-sm leading-relaxed text-white/70", children: "Premium real estate consulting firm in South Bopal, Ahmedabad. Trusted advisory for serious buyers and investors." })
             ] }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "p",
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-xs uppercase tracking-widest font-semibold mb-4 text-white", children: "Quick Links" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "space-y-2", children: [
+                "Services",
+                "Opportunities",
+                "Listings",
+                "Testimonials",
+                "Contact"
+              ].map((link) => /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "button",
                 {
-                  className: "font-body text-xs uppercase tracking-widest font-semibold mb-4",
-                  style: { color: "oklch(var(--accent))" },
-                  children: "Quick Links"
+                  type: "button",
+                  onClick: () => {
+                    var _a2;
+                    return (_a2 = document.getElementById(link.toLowerCase())) == null ? void 0 : _a2.scrollIntoView({ behavior: "smooth" });
+                  },
+                  className: "font-body text-sm text-white/70 hover:text-white transition-smooth underline-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded",
+                  children: link
                 }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "space-y-2", children: ["Services", "Opportunities", "Testimonials", "Contact"].map(
-                (link) => /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "button",
-                  {
-                    type: "button",
-                    onClick: () => {
-                      var _a2;
-                      return (_a2 = document.getElementById(link.toLowerCase())) == null ? void 0 : _a2.scrollIntoView({ behavior: "smooth" });
-                    },
-                    className: "font-body text-sm text-primary-foreground/75 hover:text-primary-foreground transition-smooth underline-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded",
-                    children: link
-                  }
-                ) }, link)
-              ) })
+              ) }, link)) })
             ] }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "p",
-                {
-                  className: "font-body text-xs uppercase tracking-widest font-semibold mb-4",
-                  style: { color: "oklch(var(--accent))" },
-                  children: "Contact"
-                }
-              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-xs uppercase tracking-widest font-semibold mb-4 text-white", children: "Contact" }),
               /* @__PURE__ */ jsxRuntimeExports.jsxs("address", { className: "not-italic space-y-2", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "font-body text-sm text-primary-foreground/75", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "font-body text-sm text-white/70", children: [
                   "South Bopal, Ahmedabad",
                   /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
                   "Gujarat 380058, India"
@@ -18892,7 +18882,7 @@ function Layout({ children }) {
                   "a",
                   {
                     href: "tel:+919876543210",
-                    className: "block font-body text-sm text-primary-foreground/75 hover:text-primary-foreground transition-smooth focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded",
+                    className: "block font-body text-sm text-white/70 hover:text-white transition-smooth focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded",
                     children: "+91 98765 43210"
                   }
                 ),
@@ -18900,22 +18890,22 @@ function Layout({ children }) {
                   "a",
                   {
                     href: "mailto:consult@therealrealty.in",
-                    className: "block font-body text-sm text-primary-foreground/75 hover:text-primary-foreground transition-smooth focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded",
+                    className: "block font-body text-sm text-white/70 hover:text-white transition-smooth focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded",
                     children: "consult@therealrealty.in"
                   }
                 )
               ] })
             ] })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-10 pt-6 border-t border-primary-foreground/15 flex flex-col sm:flex-row justify-between items-center gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "font-body text-xs text-primary-foreground/50", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "font-body text-xs text-white/50", children: [
               "© ",
               year,
               " ",
               COMPANY_NAME,
               ". All rights reserved."
             ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "font-body text-xs text-primary-foreground/50", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "font-body text-xs text-white/50", children: [
               "Built with love using",
               " ",
               /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -18924,7 +18914,7 @@ function Layout({ children }) {
                   href: utmLink,
                   target: "_blank",
                   rel: "noopener noreferrer",
-                  className: "hover:text-primary-foreground/80 transition-smooth underline underline-offset-2",
+                  className: "hover:text-white/80 transition-smooth underline underline-offset-2",
                   children: "caffeine.ai"
                 }
               )
@@ -18969,88 +18959,130 @@ function useScrollReveal() {
   }, []);
   return ref;
 }
+const PILLARS = [
+  {
+    title: "Honest Advisory",
+    desc: "We tell you what you need to hear, not what you want to hear. Our recommendations are based on data, not incentives."
+  },
+  {
+    title: "Personalized Approach",
+    desc: "Every client receives a dedicated advisory path — no templates, no generic shortlists, no wasted site visits."
+  },
+  {
+    title: "Local Expertise",
+    desc: "South Bopal and surrounding premium zones are our home turf. We know every street, project, and developer."
+  }
+];
+const STATS = [
+  { value: "10+", label: "Years of Expertise" },
+  { value: "41+", label: "Satisfied Families" },
+  { value: "5.0★", label: "Google Rating" }
+];
+function AnimatedStat({
+  value,
+  label,
+  delay
+}) {
+  const ref = reactExports.useRef(null);
+  reactExports.useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.style.transitionDelay = `${delay}ms`;
+          el.classList.add("stat-pop-visible");
+          obs.disconnect();
+        }
+      },
+      { threshold: 0.2 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [delay]);
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { ref, className: "text-center stat-pop", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-display text-3xl lg:text-4xl italic font-bold mb-1 text-[#C9A14A]", children: value }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-body text-xs text-white/60 uppercase tracking-widest", children: label })
+  ] });
+}
 function AboutSection() {
-  const ref = useScrollReveal();
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+  const headingRef = useScrollReveal();
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "section",
     {
       id: "about",
       "data-ocid": "about.section",
-      className: "py-20 lg:py-28",
-      style: { background: "oklch(var(--muted))" },
-      children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 lg:grid-cols-2 gap-14 items-center", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { ref, children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "p",
-            {
-              className: "font-body text-xs uppercase tracking-widest font-semibold mb-3",
-              style: { color: "oklch(var(--accent))" },
-              children: "Born to Consult"
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-5", children: [
-            "We Guide. You Decide.",
-            /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "oklch(var(--primary))" }, children: "Always in Your Interest." })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-muted-foreground text-base leading-relaxed mb-5", children: "The Real Realty was founded on a simple belief: property advisory should serve the client, not the commission. In a market dominated by aggressive brokers and misleading listings, we chose a different path." }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-muted-foreground text-base leading-relaxed mb-8", children: "Operating exclusively out of South Bopal — one of Ahmedabad's fastest-appreciating premium corridors — we bring deep local expertise, honest counsel, and a relationship-first approach to every engagement. Our clients come back not because they have to, but because they trust us." }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-3 gap-6", children: [
-            { value: "10+", label: "Years of expertise" },
-            { value: "41+", label: "Satisfied families" },
-            { value: "5.0★", label: "Google reviews" }
-          ].map((stat) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
+      className: "py-20 lg:py-28 relative overflow-hidden",
+      style: { background: "#0F3D2E" },
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: "absolute inset-0 pointer-events-none",
+            style: {
+              backgroundImage: "radial-gradient(ellipse 70% 60% at 80% 50%, rgba(201,161,74,0.06) 0%, transparent 70%)"
+            },
+            "aria-hidden": "true"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { ref: headingRef, className: "text-center mb-14", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-xs uppercase tracking-widest font-semibold mb-3 text-[#C9A14A]", children: "Our Philosophy" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl lg:text-5xl italic font-bold text-[#C9A14A] mb-3", children: "Born to Consult" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               "div",
               {
-                className: "font-display text-2xl italic font-bold mb-1",
-                style: { color: "oklch(var(--primary))" },
-                children: stat.value
+                className: "mx-auto h-0.5 w-16 rounded-full mb-6",
+                style: { background: "#C9A14A" },
+                "aria-hidden": "true"
               }
             ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-body text-xs text-muted-foreground", children: stat.label })
-          ] }, stat.label)) })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: [
-          {
-            title: "Honest Advisory",
-            desc: "We tell you what you need to hear, not what you want to hear. Our recommendations are based on data, not incentives."
-          },
-          {
-            title: "Personalized Approach",
-            desc: "Every client receives a dedicated advisory path — no templates, no generic shortlists, no wasted site visits."
-          },
-          {
-            title: "Local Expertise",
-            desc: "South Bopal and surrounding premium zones are our home turf. We know every street, project, and developer."
-          }
-        ].map((item, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          "div",
-          {
-            "data-ocid": `about.pillar.${i + 1}`,
-            className: "flex gap-4 p-5 rounded-xl bg-card border border-border/40 transition-smooth hover:border-accent/30 scroll-reveal",
-            style: { transitionDelay: `${i * 100}ms` },
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "div",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-white/75 max-w-xl mx-auto text-base leading-relaxed", children: "We Guide. You Decide. Always in Your Interest." })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 lg:grid-cols-2 gap-14 items-start", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-white/80 text-base leading-relaxed mb-5", children: "The Real Realty was founded on a simple belief: property advisory should serve the client, not the commission. In a market dominated by aggressive brokers and misleading listings, we chose a different path." }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-white/80 text-base leading-relaxed mb-10", children: "Operating exclusively out of South Bopal — one of Ahmedabad's fastest-appreciating premium corridors — we bring deep local expertise, honest counsel, and a relationship-first approach to every engagement. Our clients come back not because they have to, but because they trust us." }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-3 gap-6 border-t border-white/10 pt-8", children: STATS.map((stat, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+                AnimatedStat,
                 {
-                  className: "shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold font-body",
-                  style: {
-                    background: "oklch(var(--accent))",
-                    color: "oklch(var(--foreground))"
-                  },
-                  children: i + 1
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-body font-semibold text-foreground text-sm mb-1", children: item.title }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-muted-foreground text-sm leading-relaxed", children: item.desc })
-              ] })
-            ]
-          },
-          item.title
-        )) })
-      ] }) })
+                  value: stat.value,
+                  label: stat.label,
+                  delay: i * 150
+                },
+                stat.label
+              )) })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: PILLARS.map((item, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                "data-ocid": `about.pillar.${i + 1}`,
+                className: "scroll-reveal flex gap-4 p-5 rounded-xl border transition-all duration-300 hover:border-[#C9A14A]/60 hover:-translate-y-1 hover:shadow-xl",
+                style: {
+                  background: "rgba(255,255,255,0.05)",
+                  borderColor: "rgba(201,161,74,0.2)",
+                  transitionDelay: `${i * 150}ms`
+                },
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "div",
+                    {
+                      className: "shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold font-body",
+                      style: { background: "#C9A14A", color: "#0F3D2E" },
+                      children: i + 1
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-body font-semibold text-[#C9A14A] text-sm mb-1", children: item.title }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-white/70 text-sm leading-relaxed", children: item.desc })
+                  ] })
+                ]
+              },
+              item.title
+            )) })
+          ] })
+        ] })
+      ]
     }
   );
 }
@@ -19080,163 +19112,185 @@ ${form.message}`
     );
     setSubmitted(true);
   };
-  const inputClass = "w-full font-body text-sm bg-muted border border-input rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/60 transition-smooth";
-  const labelClass = "block font-body text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1.5";
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+  const inputClass = "w-full font-body text-sm bg-white border border-[rgba(201,161,74,0.3)] rounded-lg px-4 py-3 text-[#1A1A1A] placeholder:text-[#1A1A1A]/40 focus:outline-none focus:ring-2 focus:ring-[#C9A14A]/60 transition-all duration-200";
+  const labelClass = "block font-body text-xs font-semibold uppercase tracking-wider text-white/70 mb-1.5";
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "section",
     {
       id: "contact",
       "data-ocid": "contact.section",
-      className: "py-20 lg:py-28",
-      style: { background: "oklch(var(--muted))" },
-      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-4xl mx-auto px-4 sm:px-6 lg:px-8", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { ref: headingRef, className: "text-center mb-14", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "p",
-            {
-              className: "font-body text-xs uppercase tracking-widest font-semibold mb-3",
-              style: { color: "oklch(var(--accent))" },
-              children: "Get In Touch"
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-4", children: "Book a Private Consultation" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-muted-foreground max-w-xl mx-auto text-base leading-relaxed", children: "Share a few details and we'll reach out within 24 hours to schedule your complimentary discovery call." })
-        ] }),
-        submitted ? /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      className: "py-20 lg:py-28 relative overflow-hidden",
+      style: { background: "#0F3D2E" },
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
-            "data-ocid": "contact.success_state",
-            className: "text-center bg-card rounded-2xl border border-border/40 p-12",
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "div",
-                {
-                  className: "text-5xl mb-5",
-                  style: { color: "oklch(var(--accent))" },
-                  "aria-hidden": "true",
-                  children: "✓"
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-2xl italic font-bold text-foreground mb-3", children: "Message Sent" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-muted-foreground text-base leading-relaxed max-w-md mx-auto", children: "Thank you for reaching out. We'll connect with you within 24 hours to schedule your consultation." }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "button",
-                {
-                  type: "button",
-                  onClick: () => setSubmitted(false),
-                  "data-ocid": "contact.reset_button",
-                  className: "mt-6 font-body text-sm underline-accent transition-smooth",
-                  style: { color: "oklch(var(--primary))" },
-                  children: "Submit another enquiry"
-                }
-              )
-            ]
+            className: "absolute inset-0 pointer-events-none",
+            style: {
+              backgroundImage: "radial-gradient(ellipse 70% 60% at 30% 40%, rgba(201,161,74,0.07) 0%, transparent 70%)"
+            },
+            "aria-hidden": "true"
           }
-        ) : /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          "form",
-          {
-            onSubmit: handleSubmit,
-            "data-ocid": "contact.form",
-            className: "bg-card rounded-2xl border border-border/40 p-8 lg:p-10 space-y-5",
-            noValidate: true,
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-5", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { htmlFor: "contact-name", className: labelClass, children: [
-                    "Full Name ",
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { "aria-hidden": "true", children: "*" })
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { ref: headingRef, className: "text-center mb-14", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "p",
+              {
+                className: "font-body text-xs uppercase tracking-widest font-semibold mb-3",
+                style: { color: "#C9A14A" },
+                children: "Get In Touch"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl lg:text-4xl italic font-bold text-white mb-3", children: "Book a Private Consultation" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "div",
+              {
+                className: "mx-auto h-0.5 w-14 rounded-full mb-4",
+                style: { background: "#C9A14A" },
+                "aria-hidden": "true"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-white/70 max-w-xl mx-auto text-base leading-relaxed", children: "Share a few details and we'll reach out within 24 hours to schedule your complimentary discovery call." })
+          ] }),
+          submitted ? /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "div",
+            {
+              "data-ocid": "contact.success_state",
+              className: "text-center rounded-2xl border border-[rgba(201,161,74,0.3)] p-12",
+              style: { background: "rgba(255,255,255,0.05)" },
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "div",
+                  {
+                    className: "text-5xl mb-5",
+                    style: { color: "#C9A14A" },
+                    "aria-hidden": "true",
+                    children: "✓"
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-2xl italic font-bold text-white mb-3", children: "Message Sent" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-white/70 text-base leading-relaxed max-w-md mx-auto", children: "Thank you for reaching out. We'll connect with you within 24 hours to schedule your consultation." }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "button",
+                  {
+                    type: "button",
+                    onClick: () => setSubmitted(false),
+                    "data-ocid": "contact.reset_button",
+                    className: "mt-6 font-body text-sm transition-smooth underline",
+                    style: { color: "#C9A14A" },
+                    children: "Submit another enquiry"
+                  }
+                )
+              ]
+            }
+          ) : /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "form",
+            {
+              onSubmit: handleSubmit,
+              "data-ocid": "contact.form",
+              className: "rounded-2xl border border-[rgba(201,161,74,0.25)] p-8 lg:p-10 space-y-5",
+              style: { background: "rgba(255,255,255,0.05)" },
+              noValidate: true,
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-5", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { htmlFor: "contact-name", className: labelClass, children: [
+                      "Full Name ",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { "aria-hidden": "true", children: "*" })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "input",
+                      {
+                        id: "contact-name",
+                        type: "text",
+                        required: true,
+                        autoComplete: "name",
+                        placeholder: "Rajesh Mehta",
+                        value: form.name,
+                        onChange: (e) => setForm((f) => ({ ...f, name: e.target.value })),
+                        "data-ocid": "contact.name_input",
+                        className: inputClass
+                      }
+                    )
                   ] }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "input",
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { htmlFor: "contact-phone", className: labelClass, children: [
+                      "Phone Number ",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { "aria-hidden": "true", children: "*" })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "input",
+                      {
+                        id: "contact-phone",
+                        type: "tel",
+                        required: true,
+                        autoComplete: "tel",
+                        placeholder: "+91 98765 43210",
+                        value: form.phone,
+                        onChange: (e) => setForm((f) => ({ ...f, phone: e.target.value })),
+                        "data-ocid": "contact.phone_input",
+                        className: inputClass
+                      }
+                    )
+                  ] })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("label", { htmlFor: "contact-requirement", className: labelClass, children: "I am looking to" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "select",
                     {
-                      id: "contact-name",
-                      type: "text",
-                      required: true,
-                      autoComplete: "name",
-                      placeholder: "Rajesh Mehta",
-                      value: form.name,
-                      onChange: (e) => setForm((f) => ({ ...f, name: e.target.value })),
-                      "data-ocid": "contact.name_input",
-                      className: inputClass
+                      id: "contact-requirement",
+                      value: form.requirement,
+                      onChange: (e) => setForm((f) => ({ ...f, requirement: e.target.value })),
+                      "data-ocid": "contact.requirement_select",
+                      className: inputClass,
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "", children: "Select your requirement" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "Buy a home", children: "Buy a home" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "Invest in property", children: "Invest in property" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "Sell my property", children: "Sell my property" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "Property management", children: "Property management" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "NRI advisory", children: "NRI advisory" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "Other", children: "Other" })
+                      ]
                     }
                   )
                 ] }),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { htmlFor: "contact-phone", className: labelClass, children: [
-                    "Phone Number ",
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { "aria-hidden": "true", children: "*" })
-                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("label", { htmlFor: "contact-message", className: labelClass, children: "Brief Message (optional)" }),
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "input",
+                    "textarea",
                     {
-                      id: "contact-phone",
-                      type: "tel",
-                      required: true,
-                      autoComplete: "tel",
-                      placeholder: "+91 98765 43210",
-                      value: form.phone,
-                      onChange: (e) => setForm((f) => ({ ...f, phone: e.target.value })),
-                      "data-ocid": "contact.phone_input",
+                      id: "contact-message",
+                      rows: 4,
+                      placeholder: "Tell us a bit about your requirements, budget, or timeline...",
+                      value: form.message,
+                      onChange: (e) => setForm((f) => ({ ...f, message: e.target.value })),
+                      "data-ocid": "contact.message_textarea",
                       className: inputClass
                     }
                   )
-                ] })
-              ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("label", { htmlFor: "contact-requirement", className: labelClass, children: "I am looking to" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                  "select",
-                  {
-                    id: "contact-requirement",
-                    value: form.requirement,
-                    onChange: (e) => setForm((f) => ({ ...f, requirement: e.target.value })),
-                    "data-ocid": "contact.requirement_select",
-                    className: inputClass,
-                    children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "", children: "Select your requirement" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "Buy a home", children: "Buy a home" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "Invest in property", children: "Invest in property" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "Sell my property", children: "Sell my property" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "Property management", children: "Property management" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "NRI advisory", children: "NRI advisory" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "Other", children: "Other" })
-                    ]
-                  }
-                )
-              ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("label", { htmlFor: "contact-message", className: labelClass, children: "Brief Message (optional)" }),
+                ] }),
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "textarea",
+                  "button",
                   {
-                    id: "contact-message",
-                    rows: 4,
-                    placeholder: "Tell us a bit about your requirements, budget, or timeline...",
-                    value: form.message,
-                    onChange: (e) => setForm((f) => ({ ...f, message: e.target.value })),
-                    "data-ocid": "contact.message_textarea",
-                    className: inputClass
+                    type: "submit",
+                    "data-ocid": "contact.submit_button",
+                    className: "w-full py-3.5 rounded font-body font-semibold text-sm transition-all duration-200 hover:opacity-90 hover:shadow-lg hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2",
+                    style: {
+                      background: "#C9A14A",
+                      color: "#0F3D2E"
+                    },
+                    children: "Send via WhatsApp"
                   }
-                )
-              ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "button",
-                {
-                  type: "submit",
-                  "data-ocid": "contact.submit_button",
-                  className: "w-full py-3.5 rounded font-body font-semibold text-sm transition-smooth hover:opacity-90 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent",
-                  style: {
-                    background: "oklch(var(--accent))",
-                    color: "oklch(var(--primary))"
-                  },
-                  children: "Send via WhatsApp"
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-center font-body text-xs text-muted-foreground", children: "Your details are strictly confidential. No spam. No third-party sharing." })
-            ]
-          }
-        )
-      ] })
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-center font-body text-xs text-white/40", children: "Your details are strictly confidential. No spam. No third-party sharing." })
+              ]
+            }
+          )
+        ] })
+      ]
     }
   );
 }
@@ -19318,6 +19372,16 @@ function FAQSection() {
 function HeroSection() {
   const titleRef = useScrollReveal();
   const subtitleRef = useScrollReveal();
+  const skylineRef = reactExports.useRef(null);
+  reactExports.useEffect(() => {
+    const onScroll = () => {
+      if (!skylineRef.current) return;
+      const y = window.scrollY * 0.25;
+      skylineRef.current.style.transform = `translateY(${y}px)`;
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
   const scrollToServices = () => {
     var _a2;
     (_a2 = document.getElementById("services")) == null ? void 0 : _a2.scrollIntoView({ behavior: "smooth" });
@@ -19336,135 +19400,284 @@ function HeroSection() {
       id: "hero",
       "data-ocid": "hero.section",
       className: "relative min-h-screen flex items-center justify-center overflow-hidden grain-texture",
-      style: { background: "oklch(var(--primary))" },
+      style: { background: "#0F3D2E" },
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
-            className: "absolute inset-0 opacity-30",
+            className: "absolute inset-0 pointer-events-none",
             style: {
-              background: "radial-gradient(ellipse 80% 60% at 60% 40%, oklch(0.35 0.12 160), transparent)"
+              background: "radial-gradient(ellipse 100% 100% at 50% 50%, transparent 40%, rgba(0,0,0,0.45) 100%)"
             },
             "aria-hidden": "true"
           }
         ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 lg:grid-cols-2 gap-16 items-center", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "p",
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: "absolute inset-0 opacity-25 pointer-events-none",
+            style: {
+              background: "radial-gradient(ellipse 80% 60% at 60% 40%, #1B5E43, transparent)"
+            },
+            "aria-hidden": "true"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            ref: skylineRef,
+            className: "absolute bottom-10 left-0 right-0 overflow-hidden pointer-events-none will-change-transform",
+            "aria-hidden": "true",
+            style: { zIndex: 1 },
+            children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "svg",
               {
-                className: "font-body text-xs uppercase tracking-widest mb-5 font-medium",
-                style: { color: "oklch(var(--accent))" },
-                children: "South Bopal · Ahmedabad · Gujarat"
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "h1",
-              {
-                ref: titleRef,
-                className: "font-display text-4xl sm:text-5xl lg:text-6xl font-bold italic leading-tight text-primary-foreground mb-6",
+                viewBox: "0 0 1440 320",
+                preserveAspectRatio: "none",
+                className: "w-full",
+                style: { height: "280px", display: "block" },
+                xmlns: "http://www.w3.org/2000/svg",
+                "aria-hidden": "true",
                 children: [
-                  "Consulting-First",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "oklch(var(--accent))" }, children: "Real Estate," }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-                  "Ahmedabad"
-                ]
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "p",
-              {
-                ref: subtitleRef,
-                className: "font-body text-base lg:text-lg text-primary-foreground/75 leading-relaxed mb-8 max-w-lg",
-                children: "A premium advisory firm for serious buyers and investors in South Bopal. We guide, not push. Expert counsel that puts your interests first — always."
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-wrap gap-3", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "button",
-                {
-                  type: "button",
-                  onClick: scrollToContact,
-                  "data-ocid": "hero.book_consultation_button",
-                  className: "inline-flex items-center px-6 py-3 rounded font-body font-semibold text-sm transition-smooth hover:opacity-90 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent",
-                  style: {
-                    background: "oklch(var(--accent))",
-                    color: "oklch(var(--foreground))"
-                  },
-                  children: "Book a Consultation"
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "button",
-                {
-                  type: "button",
-                  onClick: scrollToServices,
-                  "data-ocid": "hero.explore_button",
-                  className: "inline-flex items-center px-6 py-3 rounded font-body font-semibold text-sm border transition-smooth hover:bg-primary-foreground/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent",
-                  style: {
-                    borderColor: "oklch(var(--primary-foreground) / 0.3)",
-                    color: "oklch(var(--primary-foreground))"
-                  },
-                  children: "Explore Opportunities"
-                }
-              )
-            ] })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-4 lg:pl-8", children: [
-            STAT_BADGES.map((badge) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "div",
-              {
-                className: "flex items-center gap-5 rounded-xl px-6 py-5 border transition-smooth hover:border-accent/40",
-                style: {
-                  background: "oklch(var(--primary-foreground) / 0.06)",
-                  borderColor: "oklch(var(--primary-foreground) / 0.12)",
-                  backdropFilter: "blur(8px)"
-                },
-                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "0", y: "0", width: "1440", height: "320", fill: "none" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("g", { fill: "#0B3326", opacity: "0.35", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "20", y: "160", width: "30", height: "160" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "55", y: "140", width: "20", height: "180" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "80", y: "170", width: "25", height: "150" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "200", y: "130", width: "35", height: "190" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "240", y: "150", width: "25", height: "170" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "270", y: "120", width: "40", height: "200" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "450", y: "145", width: "30", height: "175" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "485", y: "125", width: "22", height: "195" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "700", y: "135", width: "35", height: "185" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "740", y: "110", width: "28", height: "210" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "900", y: "150", width: "32", height: "170" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "940", y: "130", width: "25", height: "190" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1100", y: "140", width: "38", height: "180" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1145", y: "120", width: "28", height: "200" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1300", y: "155", width: "30", height: "165" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1335", y: "135", width: "22", height: "185" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1380", y: "160", width: "40", height: "160" })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("g", { fill: "#0A2E22", opacity: "0.55", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "0", y: "200", width: "50", height: "120" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "55", y: "180", width: "40", height: "140" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "100", y: "155", width: "35", height: "165" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "100", y: "145", width: "10", height: "15" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "140", y: "175", width: "45", height: "145" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "190", y: "190", width: "30", height: "130" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "280", y: "140", width: "55", height: "180" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "280", y: "128", width: "12", height: "18" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "340", y: "160", width: "40", height: "160" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "385", y: "145", width: "60", height: "175" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "385", y: "130", width: "15", height: "22" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "450", y: "170", width: "35", height: "150" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "560", y: "100", width: "70", height: "220" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "572", y: "82", width: "15", height: "24" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "635", y: "130", width: "50", height: "190" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "690", y: "155", width: "45", height: "165" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "780", y: "120", width: "65", height: "200" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "790", y: "105", width: "12", height: "20" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "850", y: "145", width: "50", height: "175" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "905", y: "160", width: "38", height: "160" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "948", y: "140", width: "55", height: "180" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1060", y: "150", width: "50", height: "170" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1115", y: "125", width: "60", height: "195" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1115", y: "112", width: "14", height: "18" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1180", y: "145", width: "45", height: "175" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1230", y: "165", width: "40", height: "155" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1275", y: "140", width: "55", height: "180" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1335", y: "155", width: "35", height: "165" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1375", y: "175", width: "65", height: "145" })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("g", { fill: "#072419", opacity: "0.8", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "0", y: "220", width: "60", height: "100" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "65", y: "200", width: "48", height: "120" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "160", y: "185", width: "55", height: "135" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "220", y: "170", width: "65", height: "150" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "290", y: "180", width: "50", height: "140" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "390", y: "110", width: "80", height: "210" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "404", y: "90", width: "18", height: "28" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "390", y: "108", width: "80", height: "8" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("g", { fill: "#C9A14A", opacity: "0.3", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "400", y: "125", width: "12", height: "8" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "418", y: "125", width: "12", height: "8" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "436", y: "125", width: "12", height: "8" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "454", y: "125", width: "12", height: "8" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "400", y: "143", width: "12", height: "8" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "418", y: "143", width: "12", height: "8" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "436", y: "143", width: "12", height: "8" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "400", y: "161", width: "12", height: "8" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "436", y: "161", width: "12", height: "8" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "400", y: "179", width: "12", height: "8" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "418", y: "179", width: "12", height: "8" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "454", y: "179", width: "12", height: "8" })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "478", y: "150", width: "55", height: "170" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "540", y: "165", width: "45", height: "155" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "630", y: "80", width: "90", height: "240" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "645", y: "58", width: "20", height: "30" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "630", y: "78", width: "90", height: "10" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("g", { fill: "#C9A14A", opacity: "0.35", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "642", y: "100", width: "14", height: "10" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "662", y: "100", width: "14", height: "10" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "682", y: "100", width: "14", height: "10" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "700", y: "100", width: "14", height: "10" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "642", y: "122", width: "14", height: "10" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "662", y: "122", width: "14", height: "10" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "700", y: "122", width: "14", height: "10" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "642", y: "144", width: "14", height: "10" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "682", y: "144", width: "14", height: "10" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "700", y: "144", width: "14", height: "10" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "662", y: "166", width: "14", height: "10" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "700", y: "166", width: "14", height: "10" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "642", y: "188", width: "14", height: "10" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "682", y: "188", width: "14", height: "10" })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "728", y: "130", width: "62", height: "190" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "796", y: "145", width: "55", height: "175" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "858", y: "160", width: "48", height: "160" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "960", y: "140", width: "68", height: "180" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "960", y: "126", width: "16", height: "20" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1034", y: "158", width: "55", height: "162" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1095", y: "135", width: "72", height: "185" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1106", y: "118", width: "18", height: "24" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1173", y: "150", width: "58", height: "170" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1238", y: "168", width: "48", height: "152" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1295", y: "145", width: "62", height: "175" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "1365", y: "165", width: "75", height: "155" })
+                  ] }),
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "div",
+                    "rect",
                     {
-                      className: "font-display text-3xl font-bold italic",
-                      style: { color: "oklch(var(--accent))" },
-                      children: badge.value
+                      x: "0",
+                      y: "318",
+                      width: "1440",
+                      height: "4",
+                      fill: "#041A11",
+                      opacity: "0.8"
                     }
-                  ),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-body text-sm text-primary-foreground/80 font-medium", children: badge.label })
-                ]
-              },
-              badge.label
-            )),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "a",
-              {
-                href: waHref,
-                target: "_blank",
-                rel: "noopener noreferrer",
-                "data-ocid": "hero.whatsapp_cta",
-                className: "flex items-center gap-3 mt-2 px-5 py-3 rounded-xl font-body text-sm font-medium transition-smooth hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent bg-[#25D366] text-white",
-                children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "svg",
-                    {
-                      viewBox: "0 0 24 24",
-                      fill: "currentColor",
-                      className: "w-5 h-5 shrink-0",
-                      "aria-hidden": "true",
-                      children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" })
-                    }
-                  ),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Message us on WhatsApp" })
+                  )
                 ]
               }
             )
-          ] })
-        ] }) }),
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: "relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20",
+            style: { zIndex: 2 },
+            children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 lg:grid-cols-2 gap-16 items-center", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-xs uppercase tracking-widest mb-5 font-medium text-[#C9A14A]", children: "South Bopal · Ahmedabad · Gujarat" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "h1",
+                  {
+                    ref: titleRef,
+                    className: "font-display text-4xl sm:text-5xl lg:text-6xl font-bold italic leading-tight text-white mb-6",
+                    children: [
+                      "Consulting-First",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "#C9A14A" }, children: "Real Estate," }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+                      "Ahmedabad"
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "p",
+                  {
+                    ref: subtitleRef,
+                    className: "font-body text-base lg:text-lg text-white/75 leading-relaxed mb-8 max-w-lg",
+                    children: "A premium advisory firm for serious buyers and investors in South Bopal. We guide, not push. Expert counsel that puts your interests first — always."
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-wrap gap-3", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "button",
+                    {
+                      type: "button",
+                      onClick: scrollToContact,
+                      "data-ocid": "hero.book_consultation_button",
+                      className: "inline-flex items-center px-6 py-3 rounded font-body font-semibold text-sm transition-all duration-200 hover:scale-105 hover:shadow-[0_0_20px_rgba(201,161,74,0.4)] focus-visible:outline-none focus-visible:ring-2",
+                      style: { background: "#C9A14A", color: "#0F3D2E" },
+                      children: "Book a Consultation"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "button",
+                    {
+                      type: "button",
+                      onClick: scrollToServices,
+                      "data-ocid": "hero.explore_button",
+                      className: "inline-flex items-center px-6 py-3 rounded font-body font-semibold text-sm border transition-all duration-200 hover:bg-white/10 hover:scale-105 focus-visible:outline-none focus-visible:ring-2",
+                      style: {
+                        borderColor: "rgba(255,255,255,0.3)",
+                        color: "#FFFFFF"
+                      },
+                      children: "Explore Opportunities"
+                    }
+                  )
+                ] })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-4 lg:pl-8", children: [
+                STAT_BADGES.map((badge) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "div",
+                  {
+                    className: "flex items-center gap-5 rounded-xl px-6 py-5 border transition-all duration-300 hover:border-[#C9A14A]/50 hover:bg-white/10",
+                    style: {
+                      background: "rgba(255,255,255,0.06)",
+                      borderColor: "rgba(255,255,255,0.12)",
+                      backdropFilter: "blur(8px)"
+                    },
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "div",
+                        {
+                          className: "font-display text-3xl font-bold italic",
+                          style: { color: "#C9A14A" },
+                          children: badge.value
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-body text-sm text-white/80 font-medium", children: badge.label })
+                    ]
+                  },
+                  badge.label
+                )),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "a",
+                  {
+                    href: waHref,
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    "data-ocid": "hero.whatsapp_cta",
+                    className: "flex items-center gap-3 mt-2 px-5 py-3 rounded-xl font-body text-sm font-medium transition-all duration-200 hover:opacity-90 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 bg-[#25D366] text-white",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "svg",
+                        {
+                          viewBox: "0 0 24 24",
+                          fill: "currentColor",
+                          className: "w-5 h-5 shrink-0",
+                          "aria-hidden": "true",
+                          children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" })
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Message us on WhatsApp" })
+                    ]
+                  }
+                )
+              ] })
+            ] })
+          }
+        ),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "div",
           {
             className: "absolute bottom-0 left-0 right-0 overflow-hidden leading-none",
             "aria-hidden": "true",
+            style: { zIndex: 3 },
             children: /* @__PURE__ */ jsxRuntimeExports.jsx(
               "svg",
               {
@@ -19521,145 +19734,106 @@ function InvestmentInsightsSection() {
   const headingRef = useScrollReveal();
   const leftRef = useScrollReveal();
   const rightRef = useScrollReveal();
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "section",
     {
       "data-ocid": "insights.section",
-      className: "py-20 lg:py-28",
-      style: { background: "oklch(var(--secondary))" },
-      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { ref: headingRef, className: "text-center mb-14", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "p",
-            {
-              className: "font-body text-xs uppercase tracking-widest font-semibold mb-3",
-              style: { color: "oklch(var(--accent))" },
-              children: "Where Smart Capital Moves"
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "h2",
-            {
-              className: "font-display text-3xl lg:text-4xl italic font-bold mb-4",
-              style: { color: "oklch(var(--primary-foreground))" },
-              children: "Investment Insights"
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "div",
-            {
-              className: "mx-auto h-0.5 w-16 rounded-full",
-              style: { background: "oklch(var(--accent))" },
-              "aria-hidden": "true"
-            }
-          )
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 lg:grid-cols-2 gap-10", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { ref: leftRef, className: "scroll-reveal", children: [
+      className: "py-20 lg:py-28 relative overflow-hidden",
+      style: { background: "#1B2E28" },
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: "absolute inset-0 pointer-events-none",
+            style: {
+              backgroundImage: "radial-gradient(ellipse 60% 50% at 20% 60%, rgba(201,161,74,0.06) 0%, transparent 70%)"
+            },
+            "aria-hidden": "true"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { ref: headingRef, className: "text-center mb-14", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "h3",
+              "p",
               {
-                className: "font-display text-xl italic font-bold mb-6",
-                style: { color: "oklch(var(--accent))" },
-                children: "Premium Zones in Ahmedabad"
+                className: "font-body text-xs uppercase tracking-widest font-semibold mb-3",
+                style: { color: "#C9A14A" },
+                children: "Where Smart Capital Moves"
               }
             ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: PREMIUM_ZONES.map((zone, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl lg:text-4xl italic font-bold text-white mb-3", children: "Investment Insights" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
               "div",
               {
-                "data-ocid": `insights.zone.${index2 + 1}`,
-                className: "rounded-xl p-5 border transition-smooth hover:border-accent/40",
-                style: {
-                  background: "oklch(var(--primary-foreground) / 0.04)",
-                  borderColor: "oklch(var(--primary-foreground) / 0.12)"
+                className: "mx-auto h-0.5 w-14 rounded-full",
+                style: { background: "#C9A14A" },
+                "aria-hidden": "true"
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 lg:grid-cols-2 gap-10", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { ref: leftRef, className: "scroll-reveal", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-xl italic font-bold mb-6 text-[#C9A14A]", children: "Premium Zones in Ahmedabad" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: PREMIUM_ZONES.map((zone, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "div",
+                {
+                  "data-ocid": `insights.zone.${index2 + 1}`,
+                  className: "rounded-xl p-5 border transition-all duration-300 hover:border-[#C9A14A]/50 hover:-translate-y-0.5 hover:shadow-lg",
+                  style: {
+                    background: "rgba(255,255,255,0.04)",
+                    borderColor: "rgba(255,255,255,0.1)"
+                  },
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 mb-2", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "div",
+                        {
+                          className: "w-1.5 h-5 rounded-full shrink-0",
+                          style: { background: "#C9A14A" },
+                          "aria-hidden": "true"
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-body font-semibold text-sm text-white", children: zone.name })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-sm leading-relaxed pl-4 text-white/60", children: zone.description })
+                  ]
                 },
-                children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 mb-2", children: [
+                zone.name
+              )) })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { ref: rightRef, className: "scroll-reveal", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-xl italic font-bold mb-6 text-[#C9A14A]", children: "Market Trends" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-5", children: MARKET_TRENDS.map((trend, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "div",
+                {
+                  "data-ocid": `insights.trend.${index2 + 1}`,
+                  className: "flex gap-5 rounded-xl p-5 border transition-all duration-300 hover:border-[#C9A14A]/50 hover:-translate-y-0.5 hover:shadow-lg",
+                  style: {
+                    background: "rgba(255,255,255,0.04)",
+                    borderColor: "rgba(255,255,255,0.1)"
+                  },
+                  children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
                       "div",
                       {
-                        className: "w-1.5 h-5 rounded-full shrink-0",
-                        style: { background: "oklch(var(--accent))" },
-                        "aria-hidden": "true"
+                        className: "text-2xl shrink-0 w-11 h-11 rounded-lg flex items-center justify-center",
+                        style: { background: "rgba(201,161,74,0.15)" },
+                        "aria-hidden": "true",
+                        children: trend.icon
                       }
                     ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      "h4",
-                      {
-                        className: "font-body font-semibold text-sm",
-                        style: { color: "oklch(var(--primary-foreground))" },
-                        children: zone.name
-                      }
-                    )
-                  ] }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "p",
-                    {
-                      className: "font-body text-sm leading-relaxed pl-4",
-                      style: { color: "oklch(var(--primary-foreground) / 0.65)" },
-                      children: zone.description
-                    }
-                  )
-                ]
-              },
-              zone.name
-            )) })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { ref: rightRef, className: "scroll-reveal", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "h3",
-              {
-                className: "font-display text-xl italic font-bold mb-6",
-                style: { color: "oklch(var(--accent))" },
-                children: "Market Trends"
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-5", children: MARKET_TRENDS.map((trend, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "div",
-              {
-                "data-ocid": `insights.trend.${index2 + 1}`,
-                className: "flex gap-5 rounded-xl p-5 border transition-smooth hover:border-accent/40",
-                style: {
-                  background: "oklch(var(--primary-foreground) / 0.04)",
-                  borderColor: "oklch(var(--primary-foreground) / 0.12)"
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-body font-semibold text-sm mb-1 text-white", children: trend.title }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-sm leading-relaxed text-white/60", children: trend.description })
+                    ] })
+                  ]
                 },
-                children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "div",
-                    {
-                      className: "text-2xl shrink-0 w-11 h-11 rounded-lg flex items-center justify-center",
-                      style: { background: "oklch(var(--accent) / 0.12)" },
-                      "aria-hidden": "true",
-                      children: trend.icon
-                    }
-                  ),
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      "h4",
-                      {
-                        className: "font-body font-semibold text-sm mb-1",
-                        style: { color: "oklch(var(--primary-foreground))" },
-                        children: trend.title
-                      }
-                    ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      "p",
-                      {
-                        className: "font-body text-sm leading-relaxed",
-                        style: {
-                          color: "oklch(var(--primary-foreground) / 0.65)"
-                        },
-                        children: trend.description
-                      }
-                    )
-                  ] })
-                ]
-              },
-              trend.title
-            )) })
+                trend.title
+              )) })
+            ] })
           ] })
         ] })
-      ] })
+      ]
     }
   );
 }
@@ -19672,6 +19846,7 @@ function JourneySection() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "section",
     {
+      id: "journey",
       "data-ocid": "journey.section",
       className: "py-20 lg:py-28 bg-background",
       children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-5xl mx-auto px-4 sm:px-6 lg:px-8", children: [
@@ -19684,7 +19859,15 @@ function JourneySection() {
               children: "Your Path Forward"
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-4", children: "The Client Journey" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-3", children: "The Client Journey" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "mx-auto h-0.5 w-14 rounded-full mb-4",
+              style: { background: "oklch(var(--accent))" },
+              "aria-hidden": "true"
+            }
+          ),
           /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-muted-foreground max-w-xl mx-auto text-base leading-relaxed", children: "A clear, structured consulting process designed to take you from initial inquiry to confident ownership — without stress or guesswork." })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative", children: [
@@ -19706,16 +19889,16 @@ function JourneySection() {
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "div",
                   {
-                    className: "shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-display text-lg italic font-bold z-10 border-2 transition-smooth group-hover:scale-110",
+                    className: "shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-display text-lg italic font-bold z-10 border-2 transition-all duration-300 group-hover:scale-110",
                     style: {
-                      background: "oklch(var(--accent))",
-                      borderColor: "oklch(var(--accent))",
-                      color: "oklch(var(--foreground))"
+                      background: "#C9A14A",
+                      borderColor: "#C9A14A",
+                      color: "#0F3D2E"
                     },
                     children: step.step
                   }
                 ),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 bg-card rounded-xl p-6 border border-border/40 transition-smooth group-hover:border-accent/30 group-hover:shadow-sm", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 bg-card rounded-xl p-6 border border-border/40 transition-all duration-300 group-hover:border-[#C9A14A]/40 group-hover:shadow-xl group-hover:-translate-y-0.5", children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-lg italic font-bold text-foreground mb-2", children: step.title }),
                   /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-muted-foreground text-sm leading-relaxed", children: step.description })
                 ] })
@@ -19730,10 +19913,10 @@ function JourneySection() {
             type: "button",
             onClick: scrollToContact,
             "data-ocid": "journey.start_button",
-            className: "inline-flex items-center px-8 py-3.5 rounded font-body font-semibold text-sm transition-smooth hover:opacity-90 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent",
+            className: "inline-flex items-center px-8 py-3.5 rounded font-body font-semibold text-sm transition-all duration-200 hover:opacity-90 hover:shadow-lg hover:scale-105 focus-visible:outline-none focus-visible:ring-2",
             style: {
-              background: "oklch(var(--primary))",
-              color: "oklch(var(--primary-foreground))"
+              background: "#0F3D2E",
+              color: "#FFFFFF"
             },
             children: "Begin Your Journey"
           }
@@ -19831,15 +20014,23 @@ function OpportunitiesSection() {
               children: "Curated Selection"
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-4", children: "Featured Opportunities" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-3", children: "Featured Opportunities" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "mx-auto h-0.5 w-14 rounded-full mb-4",
+              style: { background: "oklch(var(--accent))" },
+              "aria-hidden": "true"
+            }
+          ),
           /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-muted-foreground max-w-xl mx-auto text-base leading-relaxed", children: "A hand-picked selection of premium properties in South Bopal and the Ambli–Bopal corridor. Quality over quantity — always." })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-3 gap-7", children: FEATURED_PROPERTIES.map((property, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
           "div",
           {
             "data-ocid": `opportunities.item.${index2 + 1}`,
-            className: "group bg-card rounded-xl overflow-hidden border border-border/50 hover:border-accent/40 transition-smooth hover:shadow-lg scroll-reveal",
-            style: { transitionDelay: `${index2 * 100}ms` },
+            className: "scroll-reveal group bg-card rounded-xl overflow-hidden border border-border/50 hover:border-[#C9A14A]/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1",
+            style: { transitionDelay: `${index2 * 150}ms` },
             children: [
               /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative overflow-hidden aspect-[16/10]", children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -19858,10 +20049,7 @@ function OpportunitiesSection() {
                   "div",
                   {
                     className: "absolute top-3 left-3 px-2.5 py-1 rounded text-xs font-body font-semibold",
-                    style: {
-                      background: "oklch(var(--accent))",
-                      color: "oklch(var(--foreground))"
-                    },
+                    style: { background: "#C9A14A", color: "#0F3D2E" },
                     children: property.type
                   }
                 )
@@ -19870,7 +20058,7 @@ function OpportunitiesSection() {
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "div",
                   {
-                    className: "h-0.5 w-8 rounded-full mb-3",
+                    className: "h-0.5 w-8 rounded-full mb-3 transition-all duration-500 group-hover:w-14",
                     style: { background: "oklch(var(--accent))" },
                     "aria-hidden": "true"
                   }
@@ -19881,7 +20069,7 @@ function OpportunitiesSection() {
                   "p",
                   {
                     className: "font-body text-sm font-semibold",
-                    style: { color: "oklch(var(--primary))" },
+                    style: { color: "oklch(var(--accent))" },
                     children: property.priceRange
                   }
                 )
@@ -19896,10 +20084,10 @@ function OpportunitiesSection() {
             type: "button",
             onClick: scrollToContact,
             "data-ocid": "opportunities.enquire_button",
-            className: "inline-flex items-center px-8 py-3 rounded font-body font-semibold text-sm border-2 transition-smooth hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent",
+            className: "inline-flex items-center px-8 py-3 rounded font-body font-semibold text-sm border-2 transition-all duration-200 hover:shadow-md hover:scale-105 focus-visible:outline-none focus-visible:ring-2",
             style: {
-              borderColor: "oklch(var(--primary))",
-              color: "oklch(var(--primary))"
+              borderColor: "#0F3D2E",
+              color: "#0F3D2E"
             },
             children: "Enquire About More Listings"
           }
@@ -19907,6 +20095,447 @@ function OpportunitiesSection() {
       ] })
     }
   );
+}
+const PROPERTY_LISTINGS = [
+  {
+    name: "Prestige Woodland Park",
+    type: "Apartment",
+    bhk: "3 BHK",
+    location: "South Bopal, Ahmedabad",
+    area: "1,650 sq ft",
+    price: "₹1.2 Cr – ₹1.5 Cr",
+    photo: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+    description: "A thoughtfully designed 3 BHK in the heart of South Bopal, offering lush green views and premium amenities. RERA-compliant with top-tier construction quality and excellent school proximity. Ideal for growing families seeking space and serenity."
+  },
+  {
+    name: "The Greens Villa",
+    type: "Villa",
+    bhk: "4 BHK",
+    location: "Ambli-Bopal Corridor",
+    area: "3,200 sq ft",
+    price: "₹2.8 Cr – ₹3.5 Cr",
+    photo: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
+    description: "An elegant 4 BHK private villa nestled in the prestigious Ambli-Bopal corridor, featuring a private garden, double-height living room, and top-of-class finishes. A rare opportunity for buyers seeking bungalow-style living with full township amenities."
+  },
+  {
+    name: "Emerald Heights Penthouse",
+    type: "Penthouse",
+    bhk: "4 BHK",
+    location: "Shela, Ahmedabad",
+    area: "4,100 sq ft",
+    price: "₹4.2 Cr – ₹5 Cr",
+    photo: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+    description: "Sky-high luxury defined — this sprawling 4 BHK penthouse in Shela offers panoramic skyline views, a private terrace, and ultra-premium interiors. Limited inventory in one of Ahmedabad's most sought-after emerging addresses for discerning buyers."
+  },
+  {
+    name: "Goldcrest Residences",
+    type: "Apartment",
+    bhk: "2 BHK",
+    location: "Vastrapur, Ahmedabad",
+    area: "1,100 sq ft",
+    price: "₹85 L – ₹1.05 Cr",
+    photo: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80",
+    description: "A smart investment in the prestigious Vastrapur neighbourhood — this compact 2 BHK is ideally positioned near business hubs, lakes, and top entertainment zones. High rental yield and strong capital appreciation make it a preferred NRI and investor choice."
+  },
+  {
+    name: "Serene Valley Homes",
+    type: "Villa",
+    bhk: "3 BHK",
+    location: "Bopal, Ahmedabad",
+    area: "2,400 sq ft",
+    price: "₹1.9 Cr – ₹2.4 Cr",
+    photo: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+    description: "Spacious 3 BHK row villas designed for peaceful family living in established Bopal. Wide landscaped streets, dedicated parking, and a vibrant community make this an ideal first home for families upgrading from apartments."
+  },
+  {
+    name: "The Grand Meridian",
+    type: "Luxury Villa",
+    bhk: "5 BHK",
+    location: "South Bopal, Ahmedabad",
+    area: "5,500 sq ft",
+    price: "₹7.5 Cr – ₹9 Cr",
+    photo: "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=80",
+    description: "The pinnacle of luxury residential living in South Bopal. This grand 5 BHK estate boasts a private pool, home theatre, smart home automation, and impeccable Italian marble finishes. Reserved for ultra-high-net-worth buyers seeking legacy-grade real estate."
+  }
+];
+function PropertyModal({ property, onClose }) {
+  const scrollToContact = () => {
+    onClose();
+    setTimeout(() => {
+      var _a2;
+      (_a2 = document.getElementById("contact")) == null ? void 0 : _a2.scrollIntoView({ behavior: "smooth" });
+    }, 200);
+  };
+  const waMessage = encodeURIComponent(
+    `Hello! I'm interested in ${property.name} (${property.bhk} ${property.type}) at ${property.location}. Price: ${property.price}. Please share more details.`
+  );
+  const waHref = `https://wa.me/${WHATSAPP_NUMBER.replace(/\D/g, "")}?text=${waMessage}`;
+  reactExports.useEffect(() => {
+    const handleKey = (e) => {
+      if (e.key === "Escape") onClose();
+    };
+    document.addEventListener("keydown", handleKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", handleKey);
+      document.body.style.overflow = "";
+    };
+  }, [onClose]);
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "fixed inset-0 z-50", "data-ocid": "listings.modal", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        className: "absolute inset-0 bg-black/70 backdrop-blur-sm",
+        onClick: onClose,
+        onKeyUp: (e) => {
+          if (e.key === "Enter") onClose();
+        },
+        "aria-hidden": "true"
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 flex items-center justify-center p-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "div",
+      {
+        className: "relative bg-white rounded-2xl overflow-hidden shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto",
+        "aria-modal": "true",
+        "aria-label": `${property.name} details`,
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "button",
+            {
+              type: "button",
+              onClick: onClose,
+              "data-ocid": "listings.modal.close_button",
+              className: "absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-black/20 hover:bg-black/40 flex items-center justify-center transition-all duration-200 focus-visible:outline-none focus-visible:ring-2",
+              "aria-label": "Close property details",
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "svg",
+                {
+                  viewBox: "0 0 24 24",
+                  fill: "none",
+                  stroke: "white",
+                  strokeWidth: 2.5,
+                  className: "w-4 h-4",
+                  "aria-hidden": "true",
+                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "path",
+                    {
+                      strokeLinecap: "round",
+                      strokeLinejoin: "round",
+                      d: "M6 18L18 6M6 6l12 12"
+                    }
+                  )
+                }
+              )
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative", style: { aspectRatio: "16/9" }, children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "img",
+              {
+                src: property.photo,
+                alt: property.name,
+                className: "w-full h-full object-cover",
+                onError: (e) => {
+                  e.target.src = "/assets/images/placeholder.svg";
+                }
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                className: "absolute bottom-4 left-4 px-3 py-1.5 rounded-full text-xs font-body font-bold",
+                style: { background: "#C9A14A", color: "#0F3D2E" },
+                children: [
+                  property.bhk,
+                  " ",
+                  property.type
+                ]
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 lg:p-8", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "div",
+              {
+                className: "h-0.5 w-12 rounded-full mb-4",
+                style: { background: "#C9A14A" },
+                "aria-hidden": "true"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "h2",
+              {
+                className: "font-display text-2xl italic font-bold mb-2",
+                style: { color: "#0F3D2E" },
+                children: property.name
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                className: "flex flex-wrap gap-4 mb-4 text-sm font-body",
+                style: { color: "rgba(26,26,26,0.6)" },
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-1.5", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                      "svg",
+                      {
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        stroke: "#C9A14A",
+                        strokeWidth: 2,
+                        className: "w-4 h-4 shrink-0",
+                        "aria-hidden": "true",
+                        children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "path",
+                            {
+                              strokeLinecap: "round",
+                              strokeLinejoin: "round",
+                              d: "M12 2C8.686 2 6 4.686 6 8c0 5.25 6 13 6 13s6-7.75 6-13c0-3.314-2.686-6-6-6z"
+                            }
+                          ),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "12", cy: "8", r: "2" })
+                        ]
+                      }
+                    ),
+                    property.location
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-1.5", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                      "svg",
+                      {
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        stroke: "#C9A14A",
+                        strokeWidth: 2,
+                        className: "w-4 h-4 shrink-0",
+                        "aria-hidden": "true",
+                        children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "3", y: "3", width: "18", height: "18", rx: "2" }),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "path",
+                            {
+                              strokeLinecap: "round",
+                              strokeLinejoin: "round",
+                              d: "M3 9h18M9 21V9"
+                            }
+                          )
+                        ]
+                      }
+                    ),
+                    property.area
+                  ] })
+                ]
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "p",
+              {
+                className: "font-body text-2xl font-bold mb-4",
+                style: { color: "#C9A14A" },
+                children: property.price
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "p",
+              {
+                className: "font-body text-sm leading-relaxed mb-6",
+                style: { color: "rgba(26,26,26,0.7)" },
+                children: property.description
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row gap-3", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "a",
+                {
+                  href: waHref,
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  "data-ocid": "listings.modal.whatsapp_button",
+                  className: "flex-1 flex items-center justify-center gap-2 py-3 rounded-lg font-body font-semibold text-sm bg-[#25D366] text-white transition-all duration-200 hover:opacity-90 hover:shadow-md focus-visible:outline-none focus-visible:ring-2",
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "svg",
+                      {
+                        viewBox: "0 0 24 24",
+                        fill: "currentColor",
+                        className: "w-5 h-5 shrink-0",
+                        "aria-hidden": "true",
+                        children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" })
+                      }
+                    ),
+                    "Enquire on WhatsApp"
+                  ]
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "button",
+                {
+                  type: "button",
+                  onClick: scrollToContact,
+                  "data-ocid": "listings.modal.consult_button",
+                  className: "flex-1 py-3 rounded-lg font-body font-semibold text-sm border-2 transition-all duration-200 hover:shadow-md focus-visible:outline-none focus-visible:ring-2",
+                  style: { borderColor: "#0F3D2E", color: "#0F3D2E" },
+                  children: "Book a Consultation"
+                }
+              )
+            ] })
+          ] })
+        ]
+      }
+    ) })
+  ] });
+}
+function PropertyListingsSection() {
+  const headingRef = useScrollReveal();
+  const [selectedProperty, setSelectedProperty] = reactExports.useState(
+    null
+  );
+  const openModal = reactExports.useCallback((property) => {
+    setSelectedProperty(property);
+  }, []);
+  const closeModal = reactExports.useCallback(() => {
+    setSelectedProperty(null);
+  }, []);
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "section",
+      {
+        id: "listings",
+        "data-ocid": "listings.section",
+        className: "py-20 lg:py-28",
+        style: { background: "oklch(var(--background))" },
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { ref: headingRef, className: "text-center mb-14", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "p",
+              {
+                className: "font-body text-xs uppercase tracking-widest font-semibold mb-3",
+                style: { color: "oklch(var(--accent))" },
+                children: "Premium Inventory"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-3", children: "Property Listings" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "div",
+              {
+                className: "mx-auto h-0.5 w-14 rounded-full mb-4",
+                style: { background: "oklch(var(--accent))" },
+                "aria-hidden": "true"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-muted-foreground max-w-xl mx-auto text-base leading-relaxed", children: "Curated premium properties across Ahmedabad's finest residential zones. Click any listing to explore details. Each property is personally vetted by our advisory team." })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7", children: PROPERTY_LISTINGS.map((property, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "button",
+            {
+              type: "button",
+              "data-ocid": `listings.item.${index2 + 1}`,
+              onClick: () => openModal(property),
+              "aria-label": `View details for ${property.name}`,
+              className: "group bg-card rounded-xl overflow-hidden border border-border/50 transition-all duration-300 hover:border-[#C9A14A]/60 hover:shadow-2xl hover:-translate-y-1 text-left focus-visible:outline-none focus-visible:ring-2 w-full",
+              style: { boxShadow: "0 2px 12px 0 rgba(15,61,46,0.07)" },
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "div",
+                  {
+                    className: "relative overflow-hidden",
+                    style: { aspectRatio: "16/9" },
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "img",
+                        {
+                          src: property.photo,
+                          alt: property.name,
+                          className: "w-full h-full object-cover transition-all duration-700 group-hover:scale-105",
+                          loading: "lazy",
+                          onError: (e) => {
+                            e.target.src = "/assets/images/placeholder.svg";
+                          }
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "div",
+                        {
+                          className: "absolute top-3 left-3 px-2.5 py-1 rounded text-xs font-body font-semibold",
+                          style: { background: "#C9A14A", color: "#0F3D2E" },
+                          children: property.type
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "opacity-0 group-hover:opacity-100 transition-all duration-300 bg-white/95 text-[#0F3D2E] font-body font-semibold text-sm px-4 py-2 rounded-lg shadow-lg translate-y-2 group-hover:translate-y-0", children: "View Details" }) })
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-5", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "div",
+                    {
+                      className: "h-0.5 w-8 rounded-full mb-3 transition-all duration-500 group-hover:w-14",
+                      style: { background: "oklch(var(--accent))" },
+                      "aria-hidden": "true"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-lg italic font-bold text-foreground mb-1 truncate", children: property.name }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5 mb-3", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                      "svg",
+                      {
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        stroke: "currentColor",
+                        strokeWidth: "2",
+                        className: "w-3.5 h-3.5 shrink-0",
+                        style: { color: "oklch(var(--accent))" },
+                        "aria-hidden": "true",
+                        children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "path",
+                            {
+                              strokeLinecap: "round",
+                              strokeLinejoin: "round",
+                              d: "M12 2C8.686 2 6 4.686 6 8c0 5.25 6 13 6 13s6-7.75 6-13c0-3.314-2.686-6-6-6z"
+                            }
+                          ),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "12", cy: "8", r: "2" })
+                        ]
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-body text-xs text-muted-foreground", children: property.location })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-4 mb-3", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "span",
+                      {
+                        className: "font-body text-xs font-medium px-2 py-0.5 rounded",
+                        style: {
+                          background: "oklch(var(--primary) / 0.07)",
+                          color: "oklch(var(--primary))"
+                        },
+                        children: property.bhk
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-body text-xs text-muted-foreground", children: property.area })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "p",
+                    {
+                      className: "font-body text-base font-bold",
+                      style: { color: "oklch(var(--accent))" },
+                      children: property.price
+                    }
+                  )
+                ] })
+              ]
+            },
+            property.name
+          )) })
+        ] })
+      }
+    ),
+    selectedProperty && /* @__PURE__ */ jsxRuntimeExports.jsx(PropertyModal, { property: selectedProperty, onClose: closeModal })
+  ] });
 }
 function ServicesSection() {
   const headingRef = useScrollReveal();
@@ -19926,20 +20555,28 @@ function ServicesSection() {
               children: "What We Do"
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-4", children: "Our Advisory Services" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-3", children: "Our Advisory Services" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "mx-auto h-0.5 w-14 rounded-full mb-4",
+              style: { background: "oklch(var(--accent))" },
+              "aria-hidden": "true"
+            }
+          ),
           /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-muted-foreground max-w-xl mx-auto text-base leading-relaxed", children: "Comprehensive real estate consulting tailored to your goals. We work exclusively in your interest." })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6", children: SERVICE_CARDS.map((service, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-6", children: SERVICE_CARDS.map((service, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
           "div",
           {
             "data-ocid": `services.item.${index2 + 1}`,
-            className: "group bg-card rounded-xl p-6 border border-border/50 hover:border-accent/40 transition-smooth hover:shadow-md scroll-reveal",
-            style: { transitionDelay: `${index2 * 80}ms` },
+            className: "scroll-reveal group bg-card rounded-xl p-6 border border-border/50 hover:border-[#C9A14A]/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1",
+            style: { transitionDelay: `${index2 * 100}ms` },
             children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(
                 "div",
                 {
-                  className: "text-3xl mb-4 w-12 h-12 rounded-lg flex items-center justify-center",
+                  className: "text-3xl mb-4 w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-6",
                   style: { background: "oklch(var(--primary) / 0.08)" },
                   "aria-hidden": "true",
                   children: service.icon
@@ -19970,8 +20607,7 @@ function TestimonialsSection() {
     {
       id: "testimonials",
       "data-ocid": "testimonials.section",
-      className: "py-20 lg:py-28",
-      style: { background: "oklch(var(--muted))" },
+      className: "py-20 lg:py-28 bg-background",
       children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { ref: headingRef, className: "text-center mb-14", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -19982,7 +20618,15 @@ function TestimonialsSection() {
               children: "Client Voices"
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-4", children: "What Our Clients Say" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-3", children: "What Our Clients Say" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "mx-auto h-0.5 w-14 rounded-full mb-4",
+              style: { background: "oklch(var(--accent))" },
+              "aria-hidden": "true"
+            }
+          ),
           /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-center gap-1 mb-2", children: ["s1", "s2", "s3", "s4", "s5"].map((id) => /* @__PURE__ */ jsxRuntimeExports.jsx(
             "svg",
             {
@@ -20001,9 +20645,18 @@ function TestimonialsSection() {
           "figure",
           {
             "data-ocid": `testimonials.item.${index2 + 1}`,
-            className: "bg-card rounded-xl p-6 border border-border/40 flex flex-col scroll-reveal",
-            style: { transitionDelay: `${index2 * 120}ms` },
+            className: "scroll-reveal relative bg-card rounded-xl p-6 border border-border/40 flex flex-col transition-all duration-300 hover:border-[#C9A14A]/40 hover:shadow-xl hover:-translate-y-1 overflow-hidden",
+            style: { transitionDelay: `${index2 * 150}ms` },
             children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "div",
+                {
+                  className: "absolute top-3 right-4 font-display text-8xl italic leading-none pointer-events-none select-none",
+                  style: { color: "#C9A14A", opacity: 0.08 },
+                  "aria-hidden": "true",
+                  children: '"'
+                }
+              ),
               /* @__PURE__ */ jsxRuntimeExports.jsx(
                 "div",
                 {
@@ -20013,15 +20666,15 @@ function TestimonialsSection() {
                   children: '"'
                 }
               ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("blockquote", { className: "flex-1 font-body text-sm text-muted-foreground leading-relaxed mb-5", children: testimonial.quote }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("blockquote", { className: "flex-1 font-body text-sm text-muted-foreground leading-relaxed mb-5 relative z-10", children: testimonial.quote }),
               /* @__PURE__ */ jsxRuntimeExports.jsxs("figcaption", { className: "flex items-center gap-3", children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "div",
                   {
                     className: "w-10 h-10 rounded-full flex items-center justify-center text-sm font-body font-bold shrink-0",
                     style: {
-                      background: "oklch(var(--primary))",
-                      color: "oklch(var(--primary-foreground))"
+                      background: "#0F3D2E",
+                      color: "#FFFFFF"
                     },
                     "aria-hidden": "true",
                     children: testimonial.avatarInitials
@@ -20077,6 +20730,7 @@ function WhyChooseUsSection() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "section",
     {
+      id: "why-us",
       "data-ocid": "why_us.section",
       className: "py-20 lg:py-28",
       style: { background: "oklch(var(--muted))" },
@@ -20090,15 +20744,23 @@ function WhyChooseUsSection() {
               children: "Why The Real Realty"
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-4", children: "The Advisory Difference" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-3", children: "The Advisory Difference" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "mx-auto h-0.5 w-14 rounded-full mb-4",
+              style: { background: "oklch(var(--accent))" },
+              "aria-hidden": "true"
+            }
+          ),
           /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-body text-muted-foreground max-w-xl mx-auto text-base leading-relaxed", children: "In a crowded broker market, we stand apart through radical transparency, deep expertise, and an unwavering client-first ethos." })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6", children: WHY_ITEMS.map((item, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
           "div",
           {
             "data-ocid": `why_us.item.${index2 + 1}`,
-            className: "bg-card rounded-xl p-6 border border-border/40 transition-smooth hover:border-accent/30 hover:shadow-sm scroll-reveal",
-            style: { transitionDelay: `${index2 * 80}ms` },
+            className: "scroll-reveal bg-card rounded-xl p-6 border border-border/40 transition-all duration-300 hover:border-[#C9A14A]/50 hover:shadow-xl hover:-translate-y-1",
+            style: { transitionDelay: `${index2 * 100}ms` },
             children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-2xl mb-3", "aria-hidden": "true", children: item.icon }),
               /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -20118,12 +20780,48 @@ function WhyChooseUsSection() {
     }
   );
 }
+function useGlobalScrollReveal() {
+  reactExports.useEffect(() => {
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("scroll-reveal-visible");
+            observer.unobserve(entry.target);
+          }
+        }
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -30px 0px" }
+    );
+    const observe = () => {
+      const elements = document.querySelectorAll(".scroll-reveal");
+      for (const el of elements) {
+        if (prefersReducedMotion) {
+          el.classList.add("scroll-reveal-visible");
+        } else {
+          observer.observe(el);
+        }
+      }
+    };
+    observe();
+    const timer = setTimeout(observe, 500);
+    return () => {
+      observer.disconnect();
+      clearTimeout(timer);
+    };
+  }, []);
+}
 function App() {
+  useGlobalScrollReveal();
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(Layout, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(HeroSection, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsx(ServicesSection, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsx(AboutSection, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsx(OpportunitiesSection, {}),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(PropertyListingsSection, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsx(WhyChooseUsSection, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsx(InvestmentInsightsSection, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsx(JourneySection, {}),

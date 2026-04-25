@@ -32,30 +32,45 @@ export function ContactSection() {
   };
 
   const inputClass =
-    "w-full font-body text-sm bg-muted border border-input rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/60 transition-smooth";
+    "w-full font-body text-sm bg-white border border-[rgba(201,161,74,0.3)] rounded-lg px-4 py-3 text-[#1A1A1A] placeholder:text-[#1A1A1A]/40 focus:outline-none focus:ring-2 focus:ring-[#C9A14A]/60 transition-all duration-200";
 
   const labelClass =
-    "block font-body text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1.5";
+    "block font-body text-xs font-semibold uppercase tracking-wider text-white/70 mb-1.5";
 
   return (
     <section
       id="contact"
       data-ocid="contact.section"
-      className="py-20 lg:py-28"
-      style={{ background: "oklch(var(--muted))" }}
+      className="py-20 lg:py-28 relative overflow-hidden"
+      style={{ background: "#0F3D2E" }}
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Decorative glow */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage:
+            "radial-gradient(ellipse 70% 60% at 30% 40%, rgba(201,161,74,0.07) 0%, transparent 70%)",
+        }}
+        aria-hidden="true"
+      />
+
+      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={headingRef} className="text-center mb-14">
           <p
             className="font-body text-xs uppercase tracking-widest font-semibold mb-3"
-            style={{ color: "oklch(var(--accent))" }}
+            style={{ color: "#C9A14A" }}
           >
             Get In Touch
           </p>
-          <h2 className="font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl lg:text-4xl italic font-bold text-white mb-3">
             Book a Private Consultation
           </h2>
-          <p className="font-body text-muted-foreground max-w-xl mx-auto text-base leading-relaxed">
+          <div
+            className="mx-auto h-0.5 w-14 rounded-full mb-4"
+            style={{ background: "#C9A14A" }}
+            aria-hidden="true"
+          />
+          <p className="font-body text-white/70 max-w-xl mx-auto text-base leading-relaxed">
             Share a few details and we'll reach out within 24 hours to schedule
             your complimentary discovery call.
           </p>
@@ -64,19 +79,20 @@ export function ContactSection() {
         {submitted ? (
           <div
             data-ocid="contact.success_state"
-            className="text-center bg-card rounded-2xl border border-border/40 p-12"
+            className="text-center rounded-2xl border border-[rgba(201,161,74,0.3)] p-12"
+            style={{ background: "rgba(255,255,255,0.05)" }}
           >
             <div
               className="text-5xl mb-5"
-              style={{ color: "oklch(var(--accent))" }}
+              style={{ color: "#C9A14A" }}
               aria-hidden="true"
             >
               ✓
             </div>
-            <h3 className="font-display text-2xl italic font-bold text-foreground mb-3">
+            <h3 className="font-display text-2xl italic font-bold text-white mb-3">
               Message Sent
             </h3>
-            <p className="font-body text-muted-foreground text-base leading-relaxed max-w-md mx-auto">
+            <p className="font-body text-white/70 text-base leading-relaxed max-w-md mx-auto">
               Thank you for reaching out. We'll connect with you within 24 hours
               to schedule your consultation.
             </p>
@@ -84,8 +100,8 @@ export function ContactSection() {
               type="button"
               onClick={() => setSubmitted(false)}
               data-ocid="contact.reset_button"
-              className="mt-6 font-body text-sm underline-accent transition-smooth"
-              style={{ color: "oklch(var(--primary))" }}
+              className="mt-6 font-body text-sm transition-smooth underline"
+              style={{ color: "#C9A14A" }}
             >
               Submit another enquiry
             </button>
@@ -94,7 +110,8 @@ export function ContactSection() {
           <form
             onSubmit={handleSubmit}
             data-ocid="contact.form"
-            className="bg-card rounded-2xl border border-border/40 p-8 lg:p-10 space-y-5"
+            className="rounded-2xl border border-[rgba(201,161,74,0.25)] p-8 lg:p-10 space-y-5"
+            style={{ background: "rgba(255,255,255,0.05)" }}
             noValidate
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -179,16 +196,16 @@ export function ContactSection() {
             <button
               type="submit"
               data-ocid="contact.submit_button"
-              className="w-full py-3.5 rounded font-body font-semibold text-sm transition-smooth hover:opacity-90 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              className="w-full py-3.5 rounded font-body font-semibold text-sm transition-all duration-200 hover:opacity-90 hover:shadow-lg hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2"
               style={{
-                background: "oklch(var(--accent))",
-                color: "oklch(var(--primary))",
+                background: "#C9A14A",
+                color: "#0F3D2E",
               }}
             >
               Send via WhatsApp
             </button>
 
-            <p className="text-center font-body text-xs text-muted-foreground">
+            <p className="text-center font-body text-xs text-white/40">
               Your details are strictly confidential. No spam. No third-party
               sharing.
             </p>

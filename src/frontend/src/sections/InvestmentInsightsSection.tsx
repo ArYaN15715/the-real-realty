@@ -52,28 +52,35 @@ export function InvestmentInsightsSection() {
   return (
     <section
       data-ocid="insights.section"
-      className="py-20 lg:py-28"
-      style={{ background: "oklch(var(--secondary))" }}
+      className="py-20 lg:py-28 relative overflow-hidden"
+      style={{ background: "#1B2E28" }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Decorative glow */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage:
+            "radial-gradient(ellipse 60% 50% at 20% 60%, rgba(201,161,74,0.06) 0%, transparent 70%)",
+        }}
+        aria-hidden="true"
+      />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div ref={headingRef} className="text-center mb-14">
           <p
             className="font-body text-xs uppercase tracking-widest font-semibold mb-3"
-            style={{ color: "oklch(var(--accent))" }}
+            style={{ color: "#C9A14A" }}
           >
             Where Smart Capital Moves
           </p>
-          <h2
-            className="font-display text-3xl lg:text-4xl italic font-bold mb-4"
-            style={{ color: "oklch(var(--primary-foreground))" }}
-          >
+          <h2 className="font-display text-3xl lg:text-4xl italic font-bold text-white mb-3">
             Investment Insights
           </h2>
           {/* Gold accent underline */}
           <div
-            className="mx-auto h-0.5 w-16 rounded-full"
-            style={{ background: "oklch(var(--accent))" }}
+            className="mx-auto h-0.5 w-14 rounded-full"
+            style={{ background: "#C9A14A" }}
             aria-hidden="true"
           />
         </div>
@@ -82,10 +89,7 @@ export function InvestmentInsightsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Left: Premium Zones */}
           <div ref={leftRef} className="scroll-reveal">
-            <h3
-              className="font-display text-xl italic font-bold mb-6"
-              style={{ color: "oklch(var(--accent))" }}
-            >
+            <h3 className="font-display text-xl italic font-bold mb-6 text-[#C9A14A]">
               Premium Zones in Ahmedabad
             </h3>
             <div className="space-y-4">
@@ -93,29 +97,23 @@ export function InvestmentInsightsSection() {
                 <div
                   key={zone.name}
                   data-ocid={`insights.zone.${index + 1}`}
-                  className="rounded-xl p-5 border transition-smooth hover:border-accent/40"
+                  className="rounded-xl p-5 border transition-all duration-300 hover:border-[#C9A14A]/50 hover:-translate-y-0.5 hover:shadow-lg"
                   style={{
-                    background: "oklch(var(--primary-foreground) / 0.04)",
-                    borderColor: "oklch(var(--primary-foreground) / 0.12)",
+                    background: "rgba(255,255,255,0.04)",
+                    borderColor: "rgba(255,255,255,0.1)",
                   }}
                 >
                   <div className="flex items-center gap-3 mb-2">
                     <div
                       className="w-1.5 h-5 rounded-full shrink-0"
-                      style={{ background: "oklch(var(--accent))" }}
+                      style={{ background: "#C9A14A" }}
                       aria-hidden="true"
                     />
-                    <h4
-                      className="font-body font-semibold text-sm"
-                      style={{ color: "oklch(var(--primary-foreground))" }}
-                    >
+                    <h4 className="font-body font-semibold text-sm text-white">
                       {zone.name}
                     </h4>
                   </div>
-                  <p
-                    className="font-body text-sm leading-relaxed pl-4"
-                    style={{ color: "oklch(var(--primary-foreground) / 0.65)" }}
-                  >
+                  <p className="font-body text-sm leading-relaxed pl-4 text-white/60">
                     {zone.description}
                   </p>
                 </div>
@@ -125,10 +123,7 @@ export function InvestmentInsightsSection() {
 
           {/* Right: Market Trends */}
           <div ref={rightRef} className="scroll-reveal">
-            <h3
-              className="font-display text-xl italic font-bold mb-6"
-              style={{ color: "oklch(var(--accent))" }}
-            >
+            <h3 className="font-display text-xl italic font-bold mb-6 text-[#C9A14A]">
               Market Trends
             </h3>
             <div className="space-y-5">
@@ -136,32 +131,24 @@ export function InvestmentInsightsSection() {
                 <div
                   key={trend.title}
                   data-ocid={`insights.trend.${index + 1}`}
-                  className="flex gap-5 rounded-xl p-5 border transition-smooth hover:border-accent/40"
+                  className="flex gap-5 rounded-xl p-5 border transition-all duration-300 hover:border-[#C9A14A]/50 hover:-translate-y-0.5 hover:shadow-lg"
                   style={{
-                    background: "oklch(var(--primary-foreground) / 0.04)",
-                    borderColor: "oklch(var(--primary-foreground) / 0.12)",
+                    background: "rgba(255,255,255,0.04)",
+                    borderColor: "rgba(255,255,255,0.1)",
                   }}
                 >
                   <div
                     className="text-2xl shrink-0 w-11 h-11 rounded-lg flex items-center justify-center"
-                    style={{ background: "oklch(var(--accent) / 0.12)" }}
+                    style={{ background: "rgba(201,161,74,0.15)" }}
                     aria-hidden="true"
                   >
                     {trend.icon}
                   </div>
                   <div>
-                    <h4
-                      className="font-body font-semibold text-sm mb-1"
-                      style={{ color: "oklch(var(--primary-foreground))" }}
-                    >
+                    <h4 className="font-body font-semibold text-sm mb-1 text-white">
                       {trend.title}
                     </h4>
-                    <p
-                      className="font-body text-sm leading-relaxed"
-                      style={{
-                        color: "oklch(var(--primary-foreground) / 0.65)",
-                      }}
-                    >
+                    <p className="font-body text-sm leading-relaxed text-white/60">
                       {trend.description}
                     </p>
                   </div>

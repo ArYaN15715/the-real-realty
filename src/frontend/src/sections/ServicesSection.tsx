@@ -18,25 +18,31 @@ export function ServicesSection() {
           >
             What We Do
           </p>
-          <h2 className="font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl lg:text-4xl italic font-bold text-foreground mb-3">
             Our Advisory Services
           </h2>
+          {/* Gold accent underline */}
+          <div
+            className="mx-auto h-0.5 w-14 rounded-full mb-4"
+            style={{ background: "oklch(var(--accent))" }}
+            aria-hidden="true"
+          />
           <p className="font-body text-muted-foreground max-w-xl mx-auto text-base leading-relaxed">
             Comprehensive real estate consulting tailored to your goals. We work
             exclusively in your interest.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {SERVICE_CARDS.map((service, index) => (
             <div
               key={service.title}
               data-ocid={`services.item.${index + 1}`}
-              className="group bg-card rounded-xl p-6 border border-border/50 hover:border-accent/40 transition-smooth hover:shadow-md scroll-reveal"
-              style={{ transitionDelay: `${index * 80}ms` }}
+              className="scroll-reveal group bg-card rounded-xl p-6 border border-border/50 hover:border-[#C9A14A]/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+              style={{ transitionDelay: `${index * 100}ms` }}
             >
               <div
-                className="text-3xl mb-4 w-12 h-12 rounded-lg flex items-center justify-center"
+                className="text-3xl mb-4 w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-6"
                 style={{ background: "oklch(var(--primary) / 0.08)" }}
                 aria-hidden="true"
               >
